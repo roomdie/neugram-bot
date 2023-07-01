@@ -1,0 +1,9 @@
+version: "1.0"
+services:
+  bot:
+    container_name: neugram
+    build: .
+    command: python3 -m bot
+    env_file: .env
+    volumes:
+      - .:/home/bot/
