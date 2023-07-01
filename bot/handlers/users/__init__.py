@@ -2,9 +2,8 @@ from aiogram import Dispatcher
 from . import start
 from . import request
 from . import newchat
-from . import help
 
 
 def setup(dp: Dispatcher):
-    for module in (start, newchat, help, request):
+    for module in (start, newchat, request):
         module.register_handlers(dp)
